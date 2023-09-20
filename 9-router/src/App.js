@@ -20,7 +20,7 @@ const Home = ({ list, deleteBeverage }) => {
           <th>ID</th>
           <th>음료명</th>
           <th>설명</th>
-          <th>삭제</th>
+          <th>삭제</th> ``
         </tr>
       </thead>
       <tbody>
