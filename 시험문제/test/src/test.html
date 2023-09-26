@@ -1,0 +1,47 @@
+<div>
+    <h1>Create Movie</h1>
+    <form onSubmit={onSubmit}>
+      <div>
+        <input
+          type="text"
+          id="id"
+          name="id"
+          placeholder="input movie id"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+        />
+      </div>
+                    <div>
+                        <input
+                          type="text"
+                          id="title"
+                          name="title"
+                          placeholder="input movie title"
+                          value={title}
+                          onChange={(e) => setTitle(e.target.value)}
+                        />
+                      </div>
+                              <div>
+                                <input
+                                  type="text"
+                                  id="genre"
+                                  name="genre"
+                                  placeholder="input movie genre"
+                                  value={genre}
+                                  onChange={(e) => setGenre(e.target.value)}
+                                />
+                              </div>
+                                      <div>
+                                      <label>출시일 : </label>
+                                        <input
+                                          type="Date"
+                                          id="releaseDate"
+                                          name="releaseDate"
+                                          placeholder="연도-월-일"
+                                          value={release_date}
+                                          onChange={(e) => setReleaseDate(e.target.value)}
+                                        />
+                                      </div>
+      <input type="submit" value="Add Movie" />
+    </form>
+  </div>

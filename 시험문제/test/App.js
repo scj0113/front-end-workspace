@@ -13,24 +13,25 @@ const Home = ({ list, deleteBeverage }) => {
     deleteBeverage(event.target.id);
   };
   return (
-    <table border="1" style={{ borderCollapse: "collapse" }}>
+    <table>
       <thead>
-        <tr>
-          <th>ID</th>
-          <th>음료명</th>
-          <th>설명</th>
-          <th>삭제</th>
-        </tr>
+  <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Release Date</th>
+            <th>Action</th>
+          </tr>
       </thead>
-      <tbody>
-        {list.map((item) => (
-          <tr key={item.id}>
+<tbody>
+        {list.map((item)} => (
             <td>{item.id}</td>
             <td>{item.title}</td>
-            <td>{item.desc}</td>
+            <td>{item.genre}</td>
+            <td>{item.release_date}</td>
             <td>
               <button onClick={onClick} id={item.id}>
-                삭제
+                Delete
               </button>
             </td>
           </tr>
