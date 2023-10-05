@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>객체조작</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<style>
-    .item {
+    <style>
+      .item {
         width: 100px;
         height: 100px;
         background-color: sandybrown;
         margin: 10px 0;
-    }
-    .bg-hotpink {
+      }
+      .bg-hotpink {
         background-color: hotpink;
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <h2>1. Content 설정</h2>
     <h3>1) html()</h3>
 
@@ -27,7 +27,6 @@
     <div class="content">html1() 테스트 1</div>
     <div class="content">html1() 테스트 2</div>
     <div class="content">html1() 테스트 3</div>
-
 
     <h3>2) text()</h3>
 
@@ -57,22 +56,17 @@
 
     <h2>3. 요소 복제</h2>
     <div id="clone-test">
-        <div id="item1" class="item"></div>
+      <div id="item1" class="item"></div>
     </div>
 
     <button id="btn1">복제</button>
 
-
     <div id="clone-result"></div>
 
-
-
-
     <h2>4. 요소 제거</h2>
-    
 
     <div id="remove-test">
-        <div id="item2" class="item"></div>
+      <div id="item2" class="item"></div>
     </div>
 
     <button id="remove">remove</button>
@@ -81,15 +75,10 @@
 
     <div id="remove-result"></div>
 
-
     <h2>5. 배열</h2>
-
 
     <div id="each-test"></div>
 
-
-
-
     <script src="js/03_객체조작.js"></script>
-</body>
+  </body>
 </html>
